@@ -1,6 +1,22 @@
 # CSME830: Foundation of Data Science - House Price Predictoin in the US
 
 This repository contains the project for **CSME830: Foundation of Data Science**. Analyzing and predicting housing prices across the United States using 2.2M+ property records.
+## 📁 Project Structure
+
+```
+├── data/
+│   ├── realtor-data.csv (raw)
+│   └── train_set.csv (processed)
+│   └── test_set.csv
+│   └── secondary.csv (before cleaning it was additional.csv)
+├── notebooks/
+│   ├── main.ipynb 
+│   ├── secondary.ipynb
+│   └── split.ipynb
+├── streamlit/
+│   └── app.py
+└── README.md
+```
 
 ---
 ##  Why This Dataset?
@@ -101,31 +117,6 @@ df['has_individual_lot'] = (df['acre_lot'] > 0).astype(int)
 - Interactive map
 - What-if analysis tool
 - Model performance dashboard
-
-### Screenshots:
-*(Add your screenshots here)*
-
----
-
-## 📁 Project Structure
-
-```
-├── data/
-│   ├── realtor-data.csv (raw)
-│   └── train_set.csv (processed)
-│   └── test_set.csv
-│   └── secondary.csv (before cleaning it was additional.csv)
-├── notebooks/
-│   ├── main.ipynb
-│   ├── secondary.ipynb
-│   └── split.ipynb
-├── streamlit/
-│   └── app.py
-├── visualizations/
-└── README.md
-```
-
-
 
 ---
 

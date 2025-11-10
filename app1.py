@@ -423,7 +423,7 @@ elif page == "📈 Analysis":
     with col1:
         fig = px.histogram(
             df_analysis,
-            x='price',
+            x=np.log10(df['price']),
             nbins=50,
             title='Price Distribution',
             labels={'price': 'Price ($)'},
@@ -434,8 +434,8 @@ elif page == "📈 Analysis":
     with col2:
         fig = px.box(
             df_analysis,
-            y='price',
-            title='Price Box Plot',
+            y=np.log10(df['house_size']),
+            title='House size Box Plot',
             labels={'price': 'Price ($)'}
         )
         st.plotly_chart(fig, use_container_width=True)

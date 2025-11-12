@@ -365,7 +365,7 @@ elif page == "🧹 Data Preprocessing":
         # Clean up
         df_clean = df_clean.drop(['state_encoded', 'city_encoded'], axis=1)
     
-    st.success("✅ Regression imputation complete!")
+    st.success("✅ Regression imputation complete! Imputation with One-Hot Encoding using Linear Regression.")
     
     # Final missing report
     st.subheader("Final Missing Values Report")
